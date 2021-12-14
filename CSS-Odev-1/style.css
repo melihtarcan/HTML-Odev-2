@@ -1,19 +1,78 @@
-#nav {
-    color: black;
-    font-size: 20px;
-    font-style: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    height: 150px;
-    width: 100%;
-    
+.baslik {
+  text-align: center;
+  color: rgb(33, 33, 37);
+  
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+
+body {
+  background-color: darkgray;
+  margin: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+article {
+  text-align: justify;
+  font-size: larger;
+}
+
+.wrap { 
+  width:980px;
+  margin:0 auto;
+}
+/**************************************************************************  */
+
+.active {
+  background-color: #3a3a39;
+
+  color: white;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #3a3a39;
+  position: fixed;
+  overflow: auto;
 
 }
 
-.container {
-    display: flex;
-  }
-.container > div {
-    flex: 1; /*grow*/
-  }
+li a {
+  display: block;
+  padding: 8px 16px;
+  color: rgb(231, 228, 228);
+  text-decoration: none;
+  
+}
+
+li a:hover {
+  background-color: rgb(45, 46, 41);
+  color: rgb(255, 255, 255);
+} 
+
+li a:active {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #d35400;
+
+  color: white;
+}
+
 
